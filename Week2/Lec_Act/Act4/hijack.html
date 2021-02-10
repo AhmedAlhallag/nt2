@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hijack.css">
+  </head>
+  <body>
+    <h1 class ="title">Forms: Hijacking Websites</h1>
+    <hr>
+    <br>
+    <div class="conatiner">
+
+
+      <div class="btns">
+
+      <button class="btn" type="button" name="button">Click Me</button>
+      <button class="btn" type="button" name="button">Click Me</button>
+      </div>
+    <div class="reddit">
+
+    <form class="" action="https://www.reddit.com/search/?" method="GET">
+      <fieldset>
+        <legend>Hijacking Reddit</legend>
+        <label for="reddit">Search Reddit:</label>
+        <input type="text" name="q" id="reddit" placeholder="Type something.." required>
+        <input type="submit"  value="Search">
+
+
+      </fieldset>
+
+
+
+    </form>
+  </div>
+
+  <div class="google">
+
+  <form class="" action="https://www.google.com/search?q=cats" target="_blank" method="GET">
+    <fieldset>
+      <legend>Hijacking Google</legend>
+      <label for="google">Search Google:</label>
+      <input type="text" name="q" id="google" placeholder="Type something.." required>
+      <input type="submit"  value="Search">
+    </fieldset>
+
+
+
+  </form>
+</div>
+<div class="youtube">
+
+<form class="" action="https://www.youtube.com/results?" target="_blank" method="GET">
+  <fieldset>
+    <legend>Hijacking Youtube</legend>
+    <label for="youtube">Search Youtube:</label>
+    <input type="text" name="search_query" id="youtube" placeholder="Type something.." required>
+    <input type="submit"  value="Search">
+  </fieldset>
+
+
+
+</form>
+</div>
+
+<div class="cen">
+  Hold me
+
+</div>
+
+
+</div>
+  </body>
+</html>
