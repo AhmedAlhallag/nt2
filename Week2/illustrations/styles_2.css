@@ -1,0 +1,42 @@
+* {
+  font-family:"Lato", Arial
+}
+
+.main-h1 {
+color: rgb(0, 223, 236);
+text-align: center;
+border: 10px solid grey;
+width:300px;
+text-align:center;
+margin:0 auto;
+padding:30px 20px;
+border-radius: 40px;
+text-decoration: underline wavy rgb(93, 18, 219);
+background-color:rgb(238, 238, 238)
+}
+
+.btn {
+font-size: 20px;
+color:#fff;
+background-color:rgb(235, 9, 104);
+border:none;
+padding: 10px 20px;
+margin: 30px 10px;
+
+display:block;
+margin:10px auto
+}
+
+div {
+background-color: rgb(238, 238, 238);
+width: 70%;
+margin: 0 auto
+}
+
+a{
+  display: block;
+  /* width:130px; */
+  /* margin:0 auto */
+  text-align:center
+
+}

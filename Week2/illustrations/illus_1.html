@@ -3,6 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Illus 1</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style media="screen">
+    /* internal styles  */
+/* Selector: tag, class, id , attribute  */
+/* Domiinance Scale: inline --> id --> class --> tag  */
+    h1 {
+      color: green;
+    }
+
+
+    /* #id-h1{
+      color:rgb(178, 20, 222);
+      font-family: monospace;
+    } */
+
+
+.second-h1 ,  .bas-1 {
+  font-family:monospace
+
+}
+    .second-h1{
+      color:rgb(185, 23, 165);
+    }
+
+    .bas-1 {
+
+    background-color:red;
+  }
+
+
+  ol ul .make-color{
+    color:red
+  }
+
+
+
+/*  */
+
+    /*  */
+
+
+    </style>
   </head>
   <body>
     <h1>Recap on: <br> <br> Inline CSS, Internal CSS, External CSS & The Specificity/Dominance Scale </h1>
@@ -10,6 +53,47 @@
     <h1>Linking To IDs</h1>
 <hr>
 <br>
+<!-- inline -->
+<h1  class="main-h1" style="color:red"> Home Page </h1>
+
+
+<h1 id="id-h1" class="second-h1"> Things I’ve Learned </h1>
+
+
+<a href="#image">Go tto the image</a>
+
+<hr>
+<!-- Attaching multiple classes  -->
+<h2 class="bas-1 bas-2"> Internet basics </h2>
+
+<ol> The  basics:
+     <li>IP Addresses</li>
+      <li>VPCs
+        <ul> Required Knowledge
+            <li class="make-color">  Protocols</li>
+            <li>Security groups</li>
+            <li>internet gateway</li>
+        </ul>
+      </li>
+
+      <li>Subnets </li>
+      <li>Proxy Server</li>
+
+</ol>
+
+<hr>
+
+<h2> HTML Brief</h2>
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+<hr>
+
+<h2>HTML Image</h2>
+<img id="image" src="html.png" alt="" width="200px" height="200px">
+
+<a href="#">Go UP</a>
+
+
 
 
 
