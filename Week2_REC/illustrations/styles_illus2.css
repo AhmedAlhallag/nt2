@@ -1,0 +1,21 @@
+
+/* universal selector */
+*{
+  font-family:"Montserrat",verdana
+}
+
+
+.btn-1,.btn-2{
+  color:white;
+  background-color:rgb(233, 19, 93);
+  padding:30px 60px 30px 60px;
+  margin: 50px 30px 50px 30px;
+  border:none;
+  border-radius: 10px;
+  font-size:30px;
+  font-style: italic;
+  font-family: "Roboto Mono",monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline wavy rgb(116, 8, 232)
+}

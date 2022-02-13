@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Centering</title>
+    <style media="screen">
+
+    [class*="conatiner-"]{
+      height: 400px ;
+    }
+    .conatiner-1{
+      background-color: rgb(210, 0, 90);
+    }
+
+    .conatiner-2{
+      background-color: rgb(0, 78, 210);
+    }
+    /* .div-1, .div-2, .div-3, .div-4{
+
+      height: 100px ;
+      width: 100px
+    } */
+/* attribute selector */
+    [class*="div-"]{
+      height: 100px ;
+      width: 100px;
+
+
+    }
+    .div-1,.div-4 {
+      background-color: rgb(254, 100, 166);
+
+    }
+    .div-2,.div-5{
+      background-color: rgb(160, 254, 100);
+
+    }
+    .div-3,.div-6{
+      background-color: rgb(254, 234, 100);
+
+    }
+
+    .div-1,.div-2,.div-3{
+      margin: 10px auto;
+    }
+    .conatiner-2{
+      display: flex;
+      /* flexbox in css */
+      width: 100%;
+      justify-content: center;
+      /* horizontally: center */
+      align-items: center;
+      /* verticaaly: center */
+      flex-direction:column;
+
+
+    }
+
+    /* .div-4,.div-5,.div-6{
+      margin: 10px 0;
+    } */
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Centring: method 1 (margin: 0 auto) [Targetting the child elements themselves]</h1>
+    <div class="conatiner-1">
+      <div class="div-1">
+
+      </div>
+      <div class="div-2">
+
+      </div>
+      <div class="div-3">
+
+      </div>
+
+
+
+    </div>
+
+    <hr>
+
+    <h1>Centring: method 2 The display flex [Targetting the parent elements]</h1>
+    <div class="conatiner-2">
+      <div class="div-4">
+
+      </div>
+      <div class="div-5">
+
+      </div>
+      <div class="div-6">
+
+      </div>
+
+
+
+    </div>
+
+  </body>
+</html>

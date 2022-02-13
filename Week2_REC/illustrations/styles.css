@@ -1,0 +1,22 @@
+.p-external {
+  color:rgb(249, 97, 14);
+  font-size: 20px;
+  font-weight: bold
+}
+
+
+/* ol ul  ul .tcp{
+  color:green;
+  background-color: skyblue
+}
+
+ol ul  ul .tcp + li{
+  adjacent sibling
+  color:green;
+  background-color: pink
+}
+
+ol > li{
+  direct child 
+  color:blue;
+} */

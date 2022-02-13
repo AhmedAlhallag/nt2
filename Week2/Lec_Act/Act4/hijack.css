@@ -11,7 +11,13 @@ fieldset {
 /* width:60px; */
 
 }
+/* .conatiner{
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  flex-direction:column;
 
+} */
 
 
 .reddit, .google, .youtube {

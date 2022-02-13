@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .container{
+      margin-top: 300px
+
+
+    }
+      .btn-class1{
+        width: 300px;
+        border: none;
+        padding: 20px 25px;
+        color: white ;
+        background-color: DodgerBlue;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .btn-class2{
+        width: 300px;
+        border: none;
+        padding: 20px 25px;
+        color: white ;
+        background-color: DodgerBlue;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .btn-class3{
+        width: 300px;
+        border: none;
+        padding: 20px 25px;
+        color: white ;
+        background-color: DodgerBlue;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .btn-class1-new{
+        /* change the backgroud color to pink and font sizz to 30px  */
+        background-color: rgb(249, 60, 124) ;
+        font-size: 30px
+
+      }
+
+      .btn-class2-new{
+        /* change the backgroud color to pink  adn font size to 30px and border raduis to 20px  */
+        /* Change the text to "I'm styled via Event property" */
+        background-color: rgb(249, 60, 124) ;
+        font-size: 30px ;
+        border-radius: 20px ;
+        }
+
+
+      .btn-class3-new{
+        /* change the backgroud color to pink  adn font size to 30px and border raduis to 20px  */
+        /* Change the text to "Registered" */
+        /* Add an element (div with a paragprah) to the bottom that says "Thank you for registering" */
+        background-color: rgb(249, 60, 124) ;
+        font-size: 30px ;
+        border-radius: 20px ;
+      }
+
+      div .p-added-onspot {
+        background-color: rgb(20, 215, 109);
+        font-size: 30px ;
+        width: 300px;
+        margin: 0 auto;
+        padding: 15px ;
+        font-family: Arial;
+        text-transform: uppercase;
+        text-align: center;
+        color:white;
+        margin-top: 40px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+    <button id="btn-id1" onclick="changeButtonClassM1()" class="btn-class1" type="button" name="button">Style Me using Inline Events</button>
+    <br><br>
+    <button id="btn-id2" class="btn-class2" type="button" name="button">Style Me using Event properties</button>
+    <br><br>
+    <button id="btn-id3" class="btn-class3" type="button" name="button">Style Me using Event Listeners</button>
+
+  </div>
+      <script type="text/javascript" >
+
+
+      // inline HTML event attributes
+      function changeButtonClassM1() { // func def
+        // M!: inline event attr
+        var btn1 = document.getElementById("btn-id1");
+        btn1.classList.add("btn-class1-new") ;
+      }
+
+
+      // JS event properties
+      // Anon Functions
+      // 1- store anon function def inside a variable --> function expression FE
+
+      var btn2 = document.getElementById("btn-id2") ;
+      btn2.onclick = function(){
+        this.classList.add("btn-class2-new");
+        this.innerText = "I'm Styled via Event properties!";
+      }
+
+      // event Listeners
+      // 2- call back
+      var btn3 = document.getElementById("btn-id3");
+      btn3.addEventListener("click",function(){
+        btn3.classList.add("btn-class3-new");
+        btn3.innerText = "Registered!";
+        var div = document.createElement("div");
+        var p = document.createElement("p");
+        p.classList.add("p-added-onspot") ;
+        p.innerText = "Thank you for Registering!" ;
+        div.appendChild(p);
+        btn3.after(div)
+      }, {once:true} )
+
+
+      </script>
+  </body>
+</html>

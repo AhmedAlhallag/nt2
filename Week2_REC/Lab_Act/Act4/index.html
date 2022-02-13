@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>HiJacking Famous Websites</title>
+  </head>
+
+
+  <body>
+    <h1>[REC] Forms: Hijacking Websites </h1>
+    <hr>
+
+    <div class="container">
+
+
+    <div class="reddit">
+      <form class="" action="https://www.reddit.com/search/" target="_blank" method="GET">
+        <fieldset>
+          <legend>Hijacking Reddit</legend>
+          <label for="input-reddit">Search Reddit:</label>
+          <input type="text" name="q" id="input-reddit" value="" placeholder="Type in a value to search for.." required>
+          <input type="submit" name="" value="Search">
+        </fieldset>
+      </form>
+    </div>
+<!-- https://www.google.com/search?q -->
+    <div class="google">
+      <form class="" action="https://www.google.com/search" target="_blank" method="GET">
+        <fieldset>
+          <legend>Hijacking Google</legend>
+          <label for="input-google">Search Google:</label>
+          <input type="text" name="q" id="input-google" value="" placeholder="Type in a value to search for.." required>
+          <input type="submit" name="" value="Search">
+        </fieldset>
+      </form>
+    </div>
+    <!-- https://www.youtube.com/results?search_query=the+office -->
+
+    <div class="youtube">
+      <form class="" action="https://www.youtube.com/results" target="_blank" method="GET">
+        <fieldset>
+          <legend>Hijacking Youtube</legend>
+          <label for="input-youtube">Search Youtube:</label>
+          <input type="text" name="search_query" id="input-youtube" value="" placeholder="Type in a value to search for.." required>
+          <input type="submit" name="" value="Search">
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+  </body>
+</html>

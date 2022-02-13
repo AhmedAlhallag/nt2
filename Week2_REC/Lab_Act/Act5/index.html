@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act5: Gallary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <nav class="main-nav">
+      <ul>
+        <li class="dropDownIcon" onclick="dropDown()"><a href="#">&#9776;</a></li>
+        <li class="grab-li displayNone"><a href="#">Home</a></li>
+        <li class="grab-li displayNone"><a href="#">About</a></li>
+        <li class="grab-li displayNone"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h1>Galleria</h1>
+
+<!-- Row 1:  3 images  -->
+    <div class="row">
+      <div class="col">
+        <img src="imgs/1.jpg" alt="">
+        <p>image</p>
+      </div>
+
+      <div class="col">
+        <img src="imgs/2.jpg" alt="">
+        <p>image</p>
+
+      </div>
+
+      <div class="col">
+        <img src="imgs/3.jpg" alt="">
+        <p>image</p>
+
+      </div>
+    </div>
+
+    <!-- Row 2:  3 images  -->
+        <div class="row">
+          <div class="col">
+            <img src="imgs/4.jpeg" alt="">
+            <p>image</p>
+
+          </div>
+
+          <div class="col">
+            <img src="imgs/5.jpeg" alt="">
+            <p>image</p>
+
+          </div>
+
+          <div class="col">
+            <img src="imgs/6.jpg" alt="">
+            <p>image</p>
+
+          </div>
+        </div>
+
+        <script type="text/javascript">
+        var lists  = document.getElementsByClassName("grab-li");
+        // console.log(lists);
+        function  dropDown(){
+          // console.log(lists[0]);
+
+          if (lists[0].classList.contains("displayNone")){
+            for (var i = 0; i < lists.length; i++) {
+              lists[i].classList.replace("displayNone","displayBlock");
+            }
+          }
+          else if (lists[0].classList.contains("displayBlock")){
+            for (var i = 0; i < lists.length; i++) {
+              lists[i].classList.replace("displayBlock","displayNone");
+            }
+          }
+
+
+        }
+
+        </script>
+
+
+  </body>
+</html>

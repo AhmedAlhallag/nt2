@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        font-family:sans-serif;
+      }
+
+      body, ul {
+      margin: 0;
+      padding: 0
+    }
+    ul {
+    display: flex;
+    justify-content:center;
+    background-color: rgb(228, 228, 228) ;
+
+    }
+
+    .dropDownIcon{
+      display: none;
+    }
+
+      li{
+      list-style: none;
+      width: 25%;
+      padding: 0 calc(25%/6) ;
+      }
+
+      nav ul li a{
+        text-decoration: none ;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color:rgb(87, 87, 87);
+        font-size: 20px;
+        transition: background-color 200ms ease-in-out ;
+
+      }
+
+      nav ul li a:hover{
+        background-color: rgb(241, 241, 241)
+      }
+
+      @media screen and (max-width:550px) {
+        ul{
+          display: block;
+        }
+        li {
+          padding: 0px;
+          width: 100%;
+
+        }
+        nav ul li:not(:nth-child(1)) a{
+          text-align: left;
+          padding-left: 20px
+        }
+
+      .dropDownIcon{
+        display: block;
+        width: 10%;
+        margin-left: 90%
+      }
+
+      .displayNone{
+        display: none
+      }
+
+      .displayBlock{
+        display: block
+      }
+
+    }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <ul>
+        <li class="dropDownIcon" onclick="dropDown()"><a href="#">&#9776;</a></li>
+        <li class="grab-li displayNone" ><a href="#">Home</a></li>
+        <li class="grab-li displayNone" ><a href="#">About</a></li>
+        <li class="grab-li displayNone" ><a href="#">Contact Us</a></li>
+      </ul>
+
+    </nav>
+
+  </body>
+
+  <script type="text/javascript">
+  var lists = document.getElementsByClassName("grab-li") ;
+
+  function dropDown(){
+    if (lists[0].classList.contains("displayNone")){
+      lists[0].classList.replace("displayNone","displayBlock");
+    }
+
+    else if (lists[0].classList.contains("displayBlock")){
+      lists[0].classList.replace("displayBlock","displayNone");
+    }
+
+  }
+
+  </script>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Illus 1</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    /* Dominance Scale: inline->IDs (internal/external) -> class (internal/external) -> tags (internal/external)*/
+    /* internal CSS */
+    .p-internal {
+      /* CSS Rules */
+      color:blue;
+      background-color:yellow;
+    }
+
+    h3 {
+      color:yellow;
+
+    }
+    .h3-green {
+      color:green;
+    }
+
+    h3#h3-purple {
+      color:purple;
+    }
+
+    /* Descendants - CSS Child Combinators */
+    ol ul ul .special-protocol {
+      color:blue;
+      background-color:pink;
+    }
+
+    /* Direct child  > */
+    ol > li {
+      color:red
+    }
+
+    /* adjacent child  + */
+    ol ul ul .special-protocol + li{
+      color:purple;
+      background-color:skyblue;
+    }
+
+
+    .bq-cls2{
+      background-color:rgb(27, 146, 227);
+    }
+
+    .bq-cls1{
+      background-color:#ddd;
+    }
+
+    h2 , h4 {
+      background-color:skyblue;
+    }
+
+    h2 {
+
+      font-family: cursive;
+    }
+
+    h4 {
+      font-family: monospace;
+
+    }
+
+    .unique{
+      background-color: rgb(176, 255, 255);
+      color:rgb(161, 17, 196);
+      font-weight: bold;
+      text-transform: uppercase
+
+    }
+
+    span{
+      /* This is not recomended */
+      color:blue !important
+    }
+
+    </style>
+
+
+
+
+  </head>
+  <body>
+    <h1>Recap on: <br> <br> Inline CSS, Internal CSS, External CSS & The Specificity/Dominance Scale </h1>
+    <h1>Descendants, Attaching Multiple classes, Selecting Multiple Selectors</h1>
+    <h1>Linking To IDs</h1>
+<hr>
+<br>
+<!-- Inline styles: for 1st para -->
+<span style="color:red">This is a span styyled with: inline styles</span>
+<span >This is a span styyled with: inline styles</span>
+<span >This is a span styyled with: inline styles</span>
+<p class="p-internal">This is a paragraph styyled with: Internal styles (tags/class) </p>
+<p class="p-external">This is a paragraph styyled with: External Styles (tags/class)</p>
+<hr>
+
+<h2>Traversing elements in web pages</h2>
+
+<a href="#jump-here">Go to Unique Paragraph</a>
+
+<hr>
+
+<h2>Attaching Multiple classses</h2>
+
+<blockquote class="bq-cls1 bq-cls2">
+  This is a very legendary quote.
+
+
+</blockquote>
+
+
+
+<hr>
+<h2>Who will dominate?</h2>
+<h3 style="color:red" id="h3-purple" class="h3-green">Paragraph: Inline:{Color:Red}, internal/External-Class:{Color:Green}, internal/External-Id:{Color:Purple}, internal/external-tag:{Color:yellow} </h3>
+<hr>
+
+<h4>Inetrnet Basics</h4>
+
+
+
+<ol> The basics are:
+  <li>IP Address</li>
+  <li>VPC</li>
+    <ul>
+      <li>Protocols</li>
+        <ul>
+            <li class="special-protocol">ICMP</li>
+            <li>SSH</li>
+            <li class="special-protocol">HTTP</li>
+            <li>UDP</li>
+        </ul>
+      <li>Security Groups</li>
+      <li>Internet Gateways</li>
+    </ul>
+  <li>Subnets</li>
+  <li>Proxy Server</li>
+</ol>
+<hr>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p id="jump-here" class="unique">This is a UNIQUE paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+<p>This is a normal paragraph</p>
+
+
+
+
+
+
+
+  </body>
+</html>
